@@ -11,7 +11,12 @@ const GameTrailer = ({ gameId }: Props) => {
     return null;
   }
   return first ? (
-    <video poster={first.preview} src={first.data[480]} controls></video>
+    <video
+      width={`100%`}
+      poster={first.preview}
+      src={first.data[480]}
+      controls
+    ></video>
   ) : null;
 };
 
